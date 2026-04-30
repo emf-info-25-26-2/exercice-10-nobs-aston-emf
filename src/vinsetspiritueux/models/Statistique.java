@@ -13,31 +13,38 @@ public class Statistique {
      * La bouteille la plus chère non modifiable.
      */
     // VOTRE CODE ICI...
-
-    /** 
+    Bouteille laMoinsChere;
+    /**
      * La bouteille la moins chère non modifiable.
      */
     // VOTRE CODE ICI...
-
+    Bouteille laPlusChere;
     /**
      * Le nombre de bouteilles non modifiable.
      */
     // VOTRE CODE ICI...
-    
+    int nbreBouteilles;
     /**
      * Le prix moyen des bouteilles non modifiable.
      */
     // VOTRE CODE ICI...
+    double prixMoyen;
+
     /**
-     * Le constructeur de la classe Statistique. Toujours initialiser TOUS les attributs !
+     * Le constructeur de la classe Statistique. Toujours initialiser TOUS les
+     * attributs !
      *
-     * @param laPlusChere la plus chère des bouteilles trouvée
-     * @param laMoinsChere la moins chère des bouteilles trouvée
+     * @param laPlusChere    la plus chère des bouteilles trouvée
+     * @param laMoinsChere   la moins chère des bouteilles trouvée
      * @param nbreBouteilles le nombre de bouteilles trouvées
-     * @param prixMoyen le prix moyen de l'ensemble des bouteilles trouvées
+     * @param prixMoyen      le prix moyen de l'ensemble des bouteilles trouvées
      */
-    public Statistique( Bouteille laPlusChere, Bouteille laMoinsChere, int nbreBouteilles, double prixMoyen ) {
+    public Statistique(Bouteille laPlusChere, Bouteille laMoinsChere, int nbreBouteilles, double prixMoyen) {
         // VOTRE CODE ICI...
+        this.laMoinsChere = laMoinsChere;
+        this.laPlusChere = laPlusChere;
+        this.nbreBouteilles = nbreBouteilles;
+        this.prixMoyen = prixMoyen;
     }
 
     /**
@@ -47,6 +54,7 @@ public class Statistique {
      */
     public Bouteille getLaPlusChere() {
         // VOTRE CODE ICI...
+        return laPlusChere;
     }
 
     /**
@@ -55,7 +63,8 @@ public class Statistique {
      * @return la bouteille la moins chère
      */
     public Bouteille getLaMoinsChere() {
-        7/ VOTRE CODE ICI...
+        // VOTRE CODE ICI...
+        return laMoinsChere;
     }
 
     /**
@@ -65,6 +74,7 @@ public class Statistique {
      */
     public int getNbreBouteilles() {
         // VOTRE CODE ICI...
+        return nbreBouteilles;
     }
 
     /**
@@ -74,6 +84,7 @@ public class Statistique {
      */
     public double getPrixMoyen() {
         // VOTRE CODE ICI...
+        return nbreBouteilles;
     }
 
 }
